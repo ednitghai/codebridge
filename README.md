@@ -1,2 +1,3 @@
 # codebridge
-Starter website for the CodeBridge nonprofit initiative
+Starter website for the Learnwithme nonprofit initiative
+
