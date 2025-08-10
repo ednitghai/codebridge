@@ -1,108 +1,420 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CodeBridge</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #fdfdfd;
-      margin: 0;
-      padding: 0;
-      color: #333;
-    }
-    header {
-      background-color: #4a90e2;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-    header img {
-      height: 60px;
-      vertical-align: middle;
-      margin-right: 1rem;
-    }
-    section {
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
-    }
-    h2 {
-      color: #4a90e2;
-    }
-    .button {
-      display: inline-block;
-      background-color: #4a90e2;
-      color: white;
-      padding: 0.8rem 1.5rem;
-      text-decoration: none;
-      border-radius: 6px;
-      margin-top: 1rem;
-    }
-    ul {
-      list-style-type: none;
-      padding-left: 0;
-    }
-    ul li::before {
-      content: "💻 ";
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #efefef;
-      margin-top: 3rem;
-    }
-    .section-image {
-      width: 100%;
-      max-width: 600px;
-      display: block;
-      margin: 1rem auto;
-      border-radius: 10px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn With Me - Math, English & Coding Tutor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <img src="https://cdn-icons-png.flaticon.com/512/2721/2721294.png" alt="CodeBridge Logo">
-    <h1>CodeBridge 🚀</h1>
-    <p>Bridging the digital divide by teaching code to the next generation 🌍</p>
-  </header>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>LearnWithMe</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#subjects" class="nav-link">Subjects</a></li>
+                <li><a href="#resources" class="nav-link">Resources</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#signup" class="nav-link cta-button">Book Session</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
-  <section>
-    <h2>🎯 Our Mission</h2>
-    <p>
-      CodeBridge empowers underrepresented and younger students by teaching them foundational coding and technology skills through free workshops and mentorship.
-    </p>
-    <img src="https://images.unsplash.com/photo-1616587890588-d01b0a5ba8ee" alt="Students coding" class="section-image">
-  </section>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Master <span class="highlight">Math</span>, <span class="highlight">English</span> & <span class="highlight">Coding</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Personalized tutoring sessions to help you excel in mathematics, English, and programming. 
+                    From Java backend development to iOS mobile apps - let's learn together!
+                </p>
+                <div class="hero-buttons">
+                    <a href="#signup" class="btn btn-primary">Book a Session</a>
+                    <a href="#subjects" class="btn btn-secondary">Explore Subjects</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">100+</span>
+                        <span class="stat-label">Students Helped</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">Core Subjects</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">5★</span>
+                        <span class="stat-label">Average Rating</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-card math-card">
+                    <i class="fas fa-calculator"></i>
+                    <span>Mathematics</span>
+                </div>
+                <div class="floating-card english-card">
+                    <i class="fas fa-book"></i>
+                    <span>English</span>
+                </div>
+                <div class="floating-card coding-card">
+                    <i class="fas fa-code"></i>
+                    <span>Coding</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section>
-    <h2>🚀 What We Offer</h2>
-    <ul>
-      <li>Beginner-friendly weekly coding classes (Scratch, Python)</li>
-      <li>Fun and interactive projects 🎮</li>
-      <li>Workshops hosted online or at local libraries/schools 🏫</li>
-      <li>Volunteer mentorship opportunities for high school students 💡</li>
-    </ul>
-  </section>
+    <!-- Subjects Section -->
+    <section id="subjects" class="subjects">
+        <div class="container">
+            <h2 class="section-title">What I Teach</h2>
+            <p class="section-subtitle">Comprehensive tutoring across three essential areas</p>
+            
+            <div class="subjects-grid">
+                <div class="subject-card" data-subject="math">
+                    <div class="subject-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Mathematics</h3>
+                    <p>From basic arithmetic to advanced calculus, algebra, geometry, and statistics. Build strong mathematical foundations.</p>
+                    <ul class="subject-topics">
+                        <li>Algebra & Geometry</li>
+                        <li>Calculus & Trigonometry</li>
+                        <li>Statistics & Probability</li>
+                        <li>Problem Solving</li>
+                    </ul>
+                    <button class="btn btn-outline" onclick="openModal('math')">Learn More</button>
+                </div>
 
-  <section>
-    <h2>🙌 Get Involved</h2>
-    <p>
-      Whether you're a student who wants to learn, a parent looking to sign up your child, or a volunteer ready to help—we'd love to hear from you!
-    </p>
-    <a class="button" href="#">Join or Volunteer</a>
-  </section>
+                <div class="subject-card" data-subject="english">
+                    <div class="subject-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>English</h3>
+                    <p>Improve your writing, reading comprehension, grammar, and communication skills for academic and professional success.</p>
+                    <ul class="subject-topics">
+                        <li>Grammar & Writing</li>
+                        <li>Reading Comprehension</li>
+                        <li>Essay Writing</li>
+                        <li>Literature Analysis</li>
+                    </ul>
+                    <button class="btn btn-outline" onclick="openModal('english')">Learn More</button>
+                </div>
 
-  <section>
-    <h2>📬 Come join the fun.</h2>
-    <p>Email: <a href="mailto:codebridge.program@gmail.com">codebridge.program@gmail.com</a></p>
-    <p>Instagram: <a href="https://instagram.com/codebridgeprogram">@codebridgeprogram</a></p>
-  </section>
+                <div class="subject-card" data-subject="coding">
+                    <div class="subject-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Programming</h3>
+                    <p>Learn to code with hands-on projects. From Java backend development to iOS mobile apps and web development.</p>
+                    <ul class="subject-topics">
+                        <li>Java Backend Development</li>
+                        <li>iOS Mobile Apps</li>
+                        <li>Web Development</li>
+                        <li>Data Structures & Algorithms</li>
+                    </ul>
+                    <button class="btn btn-outline" onclick="openModal('coding')">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <footer>
-    <p>&copy; 2025 CodeBridge. All rights reserved. 🌐</p>
-  </footer>
+    <!-- Resources Section -->
+    <section id="resources" class="resources">
+        <div class="container">
+            <h2 class="section-title">Learning Resources</h2>
+            <p class="section-subtitle">Free resources to help you learn and practice</p>
+            
+            <div class="resources-tabs">
+                <button class="tab-button active" onclick="showTab('practice')">Practice Problems</button>
+                <button class="tab-button" onclick="showTab('guides')">Study Guides</button>
+                <button class="tab-button" onclick="showTab('tools')">Useful Tools</button>
+            </div>
+
+            <div class="tab-content active" id="practice">
+                <div class="resources-grid">
+                    <div class="resource-card">
+                        <i class="fas fa-calculator"></i>
+                        <h4>Math Practice Sets</h4>
+                        <p>Downloadable worksheets for algebra, calculus, and geometry practice.</p>
+                        <a href="#" class="resource-link">Download PDF</a>
+                    </div>
+                    <div class="resource-card">
+                        <i class="fas fa-pen"></i>
+                        <h4>Writing Exercises</h4>
+                        <p>Essay prompts and grammar exercises to improve your writing skills.</p>
+                        <a href="#" class="resource-link">View Exercises</a>
+                    </div>
+                    <div class="resource-card">
+                        <i class="fas fa-laptop-code"></i>
+                        <h4>Coding Challenges</h4>
+                        <p>Programming problems to practice algorithms and data structures.</p>
+                        <a href="#" class="resource-link">Start Coding</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="guides">
+                <div class="resources-grid">
+                    <div class="resource-card">
+                        <i class="fas fa-book-open"></i>
+                        <h4>Math Formulas</h4>
+                        <p>Quick reference guide for essential mathematical formulas.</p>
+                        <a href="#" class="resource-link">View Guide</a>
+                    </div>
+                    <div class="resource-card">
+                        <i class="fas fa-spell-check"></i>
+                        <h4>Grammar Rules</h4>
+                        <p>Comprehensive guide to English grammar and punctuation.</p>
+                        <a href="#" class="resource-link">Read More</a>
+                    </div>
+                    <div class="resource-card">
+                        <i class="fas fa-code-branch"></i>
+                        <h4>Programming Concepts</h4>
+                        <p>Beginner-friendly explanations of key programming concepts.</p>
+                        <a href="#" class="resource-link">Explore</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="tools">
+                <div class="resources-grid">
+                    <div class="resource-card">
+                        <i class="fas fa-chart-line"></i>
+                        <h4>Graphing Calculator</h4>
+                        <p>Online tool for plotting functions and solving equations.</p>
+                        <a href="#" class="resource-link">Use Tool</a>
+                    </div>
+                    <div class="resource-card">
+                        <i class="fas fa-language"></i>
+                        <h4>Grammar Checker</h4>
+                        <p>Check your writing for grammar and style improvements.</p>
+                        <a href="#" class="resource-link">Check Text</a>
+                    </div>
+                    <div class="resource-card">
+                        <i class="fas fa-terminal"></i>
+                        <h4>Code Editor</h4>
+                        <p>Online IDE for writing and testing your code.</p>
+                        <a href="#" class="resource-link">Start Coding</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Your Tutor</h2>
+                    <p>Hi! I'm passionate about helping students achieve their academic goals through personalized, engaging tutoring sessions. With expertise in mathematics, English, and programming, I bring a fresh, interactive approach to learning.</p>
+                    
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-medal"></i>
+                            <div>
+                                <h4>Experienced Educator</h4>
+                                <p>Years of experience helping students succeed</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-heart"></i>
+                            <div>
+                                <h4>Passionate Teacher</h4>
+                                <p>Dedicated to making learning fun and effective</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-users"></i>
+                            <div>
+                                <h4>Student-Centered</h4>
+                                <p>Tailored approach for each student's needs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-user-graduate"></i>
+                        <p>Your Photo Here</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Session Signup Section -->
+    <section id="signup" class="signup">
+        <div class="container">
+            <h2 class="section-title">Book Your Session</h2>
+            <p class="section-subtitle">Ready to start learning? Schedule your personalized tutoring session today!</p>
+            
+            <form class="signup-form" id="sessionForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="mathematics">Mathematics</option>
+                            <option value="english">English</option>
+                            <option value="coding">Programming/Coding</option>
+                            <option value="multiple">Multiple Subjects</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="level">Level</label>
+                        <select id="level" name="level" required>
+                            <option value="">Select level</option>
+                            <option value="beginner">Beginner</option>
+                            <option value="intermediate">Intermediate</option>
+                            <option value="advanced">Advanced</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="goals">Learning Goals</label>
+                    <textarea id="goals" name="goals" placeholder="Tell me about your learning goals and what you'd like to focus on..." rows="4"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="availability">Preferred Time</label>
+                    <select id="availability" name="availability" required>
+                        <option value="">Select preferred time</option>
+                        <option value="morning">Morning (9 AM - 12 PM)</option>
+                        <option value="afternoon">Afternoon (12 PM - 5 PM)</option>
+                        <option value="evening">Evening (5 PM - 8 PM)</option>
+                        <option value="flexible">Flexible</option>
+                    </select>
+                </div>
+                
+                <button type="submit" class="btn btn-primary btn-large">Book My Session</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>LearnWithMe</span>
+                    </div>
+                    <p>Empowering students to achieve their academic goals through personalized tutoring.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#subjects">Subjects</a></li>
+                        <li><a href="#resources">Resources</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#signup">Book Session</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> tutor@learnwithme.com</p>
+                        <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                        <p><i class="fas fa-clock"></i> Mon-Fri: 9 AM - 8 PM</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 LearnWithMe. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div id="mathModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('mathModal')">&times;</span>
+            <h3>Mathematics Tutoring</h3>
+            <p>Comprehensive math tutoring covering all levels from basic arithmetic to advanced calculus.</p>
+            <ul>
+                <li><strong>Algebra:</strong> Linear equations, quadratic functions, polynomials</li>
+                <li><strong>Geometry:</strong> Shapes, angles, proofs, coordinate geometry</li>
+                <li><strong>Calculus:</strong> Derivatives, integrals, limits, applications</li>
+                <li><strong>Statistics:</strong> Data analysis, probability, distributions</li>
+            </ul>
+            <button class="btn btn-primary" onclick="scrollToSignup()">Book Math Session</button>
+        </div>
+    </div>
+
+    <div id="englishModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('englishModal')">&times;</span>
+            <h3>English Tutoring</h3>
+            <p>Improve your English skills with personalized instruction in writing, reading, and communication.</p>
+            <ul>
+                <li><strong>Writing:</strong> Essays, creative writing, technical writing</li>
+                <li><strong>Grammar:</strong> Sentence structure, punctuation, style</li>
+                <li><strong>Reading:</strong> Comprehension, analysis, critical thinking</li>
+                <li><strong>Literature:</strong> Poetry, novels, literary analysis</li>
+            </ul>
+            <button class="btn btn-primary" onclick="scrollToSignup()">Book English Session</button>
+        </div>
+    </div>
+
+    <div id="codingModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('codingModal')">&times;</span>
+            <h3>Programming Tutoring</h3>
+            <p>Learn to code with hands-on projects and real-world applications.</p>
+            <ul>
+                <li><strong>Java:</strong> Backend development, Spring framework, APIs</li>
+                <li><strong>iOS Development:</strong> Swift, UIKit, SwiftUI, App Store</li>
+                <li><strong>Web Development:</strong> HTML, CSS, JavaScript, React</li>
+                <li><strong>Fundamentals:</strong> Data structures, algorithms, design patterns</li>
+            </ul>
+            <button class="btn btn-primary" onclick="scrollToSignup()">Book Coding Session</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
